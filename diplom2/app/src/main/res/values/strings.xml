@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">diplom</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nameCPU">Назва процессору:</string>
+    <string name="nameBrand">Назва бренду:</string>
+    <string name="socketProcessor">Сокет процессора:</string>
+    <string name="search">search</string>
+    <string name="name_ram">Назва:</string>
+    <string name="ram_frequency">Частота:</string>
+    <string name="ram_timing">Таймінги:</string>
+    <string name="ram_type">Тип пам\'яті:</string>
+    <string name="tdp">TDP:</string>
+    <string name="nameCooler">Назва:</string>
+</resources>

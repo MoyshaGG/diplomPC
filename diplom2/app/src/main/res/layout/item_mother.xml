@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#104">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="200dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <View
+        android:id="@+id/viewUp"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="#B5B5B5"
+        app:layout_constraintBottom_toTopOf="@+id/imageMotherRecycle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageMotherRecycle"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewUp"
+        tools:background="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/nameMotherView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="-40dp"
+        android:textStyle = "bold"
+        android:textSize = "18sp"
+        android:text="@string/nameCPU"
+        app:layout_constraintBottom_toBottomOf="@+id/imageMotherRecycle"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/nameMother"
+        android:layout_width="170sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/nameMotherView"
+        app:layout_constraintTop_toTopOf="@+id/nameMotherView"
+        android:textStyle = "bold"
+        android:textSize = "18sp"
+        tools:text="i5-10400F" />
+
+    <TextView
+        android:id="@+id/motherPriceView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@+id/nameMotherView"
+        app:layout_constraintTop_toBottomOf="@+id/nameMother"
+        android:textStyle = "bold"
+        android:textSize = "18sp"
+        android:text="Ціна:"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/motherPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/nameMother"
+        app:layout_constraintTop_toTopOf="@+id/motherPriceView"
+        tools:text="1550" />
+
+    <TextView
+        android:id="@+id/MotherSocketView"
+        android:layout_width="158dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/socketProcessor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/motherPriceView"
+        app:layout_constraintTop_toBottomOf="@+id/motherPrice" />
+
+    <TextView
+        android:id="@+id/MotherSocket"
+        android:layout_width="170sp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/motherPrice"
+        app:layout_constraintTop_toTopOf="@+id/MotherSocketView"
+        tools:text="s1151" />
+
+    <TextView
+        android:id="@+id/motherboardChipsetView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/MotherSocketView"
+        app:layout_constraintTop_toBottomOf="@+id/MotherSocket"
+        android:text="Чіпсет:"
+        />
+
+    <TextView
+        android:id="@+id/motherboardChipset"
+        android:layout_width="170sp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/MotherSocket"
+        app:layout_constraintTop_toTopOf="@+id/motherboardChipsetView"
+        tools:text="12" />
+
+    <TextView
+        android:id="@+id/motherboardFormFactorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Формфактор:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/motherboardChipsetView"
+        app:layout_constraintTop_toBottomOf="@+id/motherboardChipset" />
+
+    <TextView
+        android:id="@+id/motherboardFormFactor"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/motherboardChipset"
+        app:layout_constraintTop_toTopOf="@+id/motherboardFormFactorView"
+        tools:text="6" />
+
+    <TextView
+        android:id="@+id/motherboardConnectorsView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Роз'єми:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/motherboardFormFactorView"
+        app:layout_constraintTop_toBottomOf="@+id/motherboardFormFactor" />
+
+    <TextView
+        android:id="@+id/motherboardConnectors"
+        android:layout_width="170sp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/motherboardFormFactor"
+        app:layout_constraintTop_toTopOf="@+id/motherboardConnectorsView"
+        tools:text="DDR4" />
+
+    <TextView
+        android:id="@+id/motherboardMaxRamMemoryView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Макс.об'єм RAM:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/motherboardFormFactorView"
+        app:layout_constraintTop_toBottomOf="@+id/motherboardConnectors" />
+
+    <TextView
+        android:id="@+id/motherboardMaxRamMemory"
+        android:layout_width="170sp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/motherboardFormFactor"
+        app:layout_constraintTop_toTopOf="@+id/motherboardMaxRamMemoryView"
+        tools:text="60" />
+
+    <TextView
+        android:id="@+id/motherboardFrequencyRamView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Макс.частота RAM:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/motherboardFormFactorView"
+        app:layout_constraintTop_toBottomOf="@+id/motherboardMaxRamMemory" />
+
+    <TextView
+        android:id="@+id/motherboardFrequencyRam"
+        android:layout_width="170sp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/motherboardConnectors"
+        app:layout_constraintTop_toTopOf="@+id/motherboardFrequencyRamView"
+        tools:text="10" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+
+                android:textStyle="bold"
+
+                android:text=" UAH"
+                app:layout_constraintStart_toEndOf="@+id/motherPrice"
+                app:layout_constraintTop_toTopOf="@+id/motherPrice" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

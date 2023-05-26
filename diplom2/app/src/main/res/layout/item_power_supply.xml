@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#104">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="200dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/imagePowerSupplyRecycle"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:background="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:id="@+id/namePowerSupplyView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginBottom="-40dp"
+                android:text="Назва:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imagePowerSupplyRecycle"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/namePowerSupply"
+                android:layout_width="180sp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/powersupplyPowerView"
+                app:layout_constraintTop_toTopOf="@+id/namePowerSupplyView"
+                tools:text="i5-10400F" />
+
+            <TextView
+                android:id="@+id/powersupplyPriceView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Ціна:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/namePowerSupplyView"
+                app:layout_constraintTop_toBottomOf="@+id/namePowerSupply"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/powersupplyPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/namePowerSupply"
+                app:layout_constraintTop_toTopOf="@+id/powersupplyPriceView"
+                tools:text="1550" />
+
+            <TextView
+                android:id="@+id/powersupplyPowerView"
+                android:layout_width="140dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="15dp"
+                android:text="Потужність:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/powersupplyPriceView"
+                app:layout_constraintTop_toBottomOf="@+id/powersupplyPrice" />
+
+
+            <TextView
+                android:id="@+id/powersupplyPower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/powersupplyPrice"
+                app:layout_constraintTop_toTopOf="@+id/powersupplyPowerView"
+                tools:text="500" />
+
+            <TextView
+                android:id="@+id/powersupplySizeView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Модульність:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/powersupplyPowerView"
+                app:layout_constraintTop_toBottomOf="@+id/powersupplyPower" />
+
+            <TextView
+                android:id="@+id/powersupplySize"
+                android:layout_width="180sp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/powersupplyPower"
+                app:layout_constraintTop_toTopOf="@+id/powersupplySizeView"
+                tools:text="Full" />
+
+            <TextView
+                android:id="@+id/powersupplyConnectorsView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Роз'єми:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/powersupplySizeView"
+                app:layout_constraintTop_toBottomOf="@+id/powersupplySize" />
+
+            <TextView
+                android:id="@+id/powersupplyConnectors"
+                android:layout_width="180sp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/powersupplyPower"
+                app:layout_constraintTop_toTopOf="@+id/powersupplyConnectorsView"
+                tools:text="80 Plus Gold" />
+
+            <TextView
+                android:id="@+id/watt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" W"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/powersupplyPower"
+                app:layout_constraintTop_toTopOf="@+id/powersupplyPower" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" UAH"
+                android:textSize="18sp"
+                android:textStyle="bold"
+
+                app:layout_constraintStart_toEndOf="@+id/powersupplyPrice"
+                app:layout_constraintTop_toTopOf="@+id/powersupplyPrice" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

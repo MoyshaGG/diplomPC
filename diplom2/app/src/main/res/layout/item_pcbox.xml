@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#104">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="200dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imagePcboxRecycle"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:background="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/namePcboxView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="-40dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Назва корпусу:"
+        app:layout_constraintBottom_toBottomOf="@+id/imagePcboxRecycle"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/namePcbox"
+        android:layout_width="140sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/namePcboxView"
+        app:layout_constraintTop_toTopOf="@+id/namePcboxView"
+        tools:text="pcbox name" />
+
+    <TextView
+        android:id="@+id/pcboxPriceView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@+id/namePcboxView"
+        app:layout_constraintTop_toBottomOf="@+id/namePcbox"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Ціна:"
+        tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/pcboxPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/namePcbox"
+                app:layout_constraintTop_toTopOf="@+id/pcboxPriceView"
+                tools:text="1550" />
+
+            <TextView
+        android:id="@+id/PcboxFrequencyView"
+        android:layout_width="158dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="15dp"
+        android:text="Формфактор:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/pcboxPriceView"
+        app:layout_constraintTop_toBottomOf="@+id/pcboxPrice" />
+
+
+    <TextView
+        android:id="@+id/pcboxFormFactor"
+        android:layout_width="140sp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/pcboxPrice"
+        app:layout_constraintTop_toTopOf="@+id/PcboxFrequencyView"
+        tools:text="2400hz" />
+
+            <TextView
+                android:id="@+id/modelViewss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Матеріал:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/PcboxFrequencyView"
+                app:layout_constraintTop_toBottomOf="@+id/pcboxFormFactor" />
+
+            <TextView
+                android:id="@+id/materialBox"
+                android:layout_width="140sp"
+                android:layout_height="wrap_content"
+                android:text="112321"
+
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/pcboxFormFactor"
+                app:layout_constraintTop_toTopOf="@+id/modelViewss" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" UAH"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/pcboxPrice"
+                app:layout_constraintTop_toTopOf="@+id/pcboxPrice" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

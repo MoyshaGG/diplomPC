@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#104">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="200dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageStorageRecycle"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/nameStorageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="-40dp"
+        android:textStyle = "bold"
+        android:textSize = "18sp"
+        android:text="@string/name_ram"
+        app:layout_constraintBottom_toBottomOf="@+id/imageStorageRecycle"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/nameStorage"
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/nameStorageView"
+        app:layout_constraintTop_toTopOf="@+id/nameStorageView"
+        tools:text="Storage name" />
+
+    <TextView
+        android:id="@+id/StoragePriceView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@+id/nameStorageView"
+        app:layout_constraintTop_toBottomOf="@+id/nameStorage"
+        android:textStyle = "bold"
+        android:textSize = "18sp"
+        android:text="Ціна:"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/StoragePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/nameStorage"
+        app:layout_constraintTop_toTopOf="@+id/StoragePriceView"
+        tools:text="1550" />
+
+    <TextView
+        android:id="@+id/StorageMemorySizeView"
+        android:layout_width="158dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="15dp"
+        android:text="Розмір пам'ті:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/StoragePriceView"
+        app:layout_constraintTop_toBottomOf="@+id/StoragePrice"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/StorageMemorySize"
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/StoragePrice"
+        app:layout_constraintTop_toTopOf="@+id/StorageMemorySizeView"
+        tools:text="2400hz" />
+
+    <TextView
+        android:id="@+id/StorageBrandView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/StorageMemorySizeView"
+        app:layout_constraintTop_toBottomOf="@+id/StorageMemorySize"
+        android:text="Бренд:"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/StorageBrand"
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/StorageMemorySize"
+        app:layout_constraintTop_toTopOf="@+id/StorageBrandView"
+        tools:text="12" />
+
+    <TextView
+        android:id="@+id/StorageTypeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/ram_type"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/StorageBrandView"
+        app:layout_constraintTop_toBottomOf="@+id/StorageBrand" />
+
+    <TextView
+        android:id="@+id/StorageType"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/StorageBrand"
+        app:layout_constraintTop_toTopOf="@+id/StorageTypeView"
+        tools:text="6" />
+
+            <CheckBox
+                android:id="@+id/storageCheckBox"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/StorageType"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/StorageSpeedView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:text="Швидкість:"
+                app:layout_constraintStart_toStartOf="@+id/StorageTypeView"
+                app:layout_constraintTop_toBottomOf="@+id/StorageType" />
+
+            <TextView
+                android:id="@+id/StorageSpeed"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="18000"
+                app:layout_constraintStart_toStartOf="@+id/StorageType"
+                app:layout_constraintTop_toTopOf="@+id/StorageSpeedView" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text=" UAH"
+                app:layout_constraintStart_toEndOf="@+id/StoragePrice"
+                app:layout_constraintTop_toTopOf="@+id/StoragePrice" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

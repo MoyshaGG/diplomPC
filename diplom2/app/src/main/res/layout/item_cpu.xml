@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#104">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="200dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageCpuRecycle"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/nameCPUView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="-40dp"
+        android:textStyle = "bold"
+        android:textSize = "18sp"
+        android:text="@string/nameCPU"
+        app:layout_constraintBottom_toBottomOf="@+id/imageCpuRecycle"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/nameCPU"
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/nameCPUView"
+        app:layout_constraintTop_toTopOf="@+id/nameCPUView"
+        android:textStyle = "bold"
+        android:textSize = "18sp"
+        tools:text="i5-10400F" />
+
+    <TextView
+        android:id="@+id/cpuPriceView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@+id/nameCPUView"
+        app:layout_constraintTop_toBottomOf="@+id/nameCPU"
+        android:textStyle = "bold"
+
+        android:textSize = "18sp"
+        android:text="Ціна:"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/cpuPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="@+id/nameCPU"
+        app:layout_constraintTop_toTopOf="@+id/cpuPriceView"
+        tools:text="1550" />
+
+    <TextView
+        android:id="@+id/CpuSocketView"
+        android:layout_width="158dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/socketProcessor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/cpuPriceView"
+        app:layout_constraintTop_toBottomOf="@+id/cpuPrice" />
+
+    <TextView
+        android:id="@+id/CpuSocket"
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/cpuPrice"
+        app:layout_constraintTop_toTopOf="@+id/CpuSocketView"
+        tools:text="s1151" />
+
+    <TextView
+        android:id="@+id/CpuThreadsView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/CpuSocketView"
+        app:layout_constraintTop_toBottomOf="@+id/CpuSocket"
+        android:text="Потоків:"
+        />
+
+    <TextView
+        android:id="@+id/CpuThreads"
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/CpuSocket"
+        app:layout_constraintTop_toTopOf="@+id/CpuThreadsView"
+        tools:text="12"
+        />
+
+    <TextView
+        android:id="@+id/CpuCoresView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Ядер:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/CpuThreadsView"
+        app:layout_constraintTop_toBottomOf="@+id/CpuThreads"
+        />
+
+    <TextView
+        android:id="@+id/CpuCores"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/CpuThreads"
+        app:layout_constraintTop_toTopOf="@+id/CpuCoresView"
+        tools:text="6"
+        />
+
+    <TextView
+        android:id="@+id/CpuMemoryTypeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Тип пам'яті:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/CpuCoresView"
+        app:layout_constraintTop_toBottomOf="@+id/CpuCores"
+        />
+
+    <TextView
+        android:id="@+id/CpuMemoryType"
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/CpuCores"
+        app:layout_constraintTop_toTopOf="@+id/CpuMemoryTypeView"
+        tools:text="DDR4"
+        />
+
+    <TextView
+        android:id="@+id/CpuTDPView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="TDP:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/CpuCoresView"
+        app:layout_constraintTop_toBottomOf="@+id/CpuMemoryType"
+        />
+
+    <TextView
+        android:id="@+id/CpuTDP"
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/CpuCores"
+        app:layout_constraintTop_toTopOf="@+id/CpuTDPView"
+        tools:text="60"
+        />
+
+    <TextView
+        android:id="@+id/CpuGenerationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Покоління:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/CpuCoresView"
+        app:layout_constraintTop_toBottomOf="@+id/CpuTDP"
+
+        />
+
+            <TextView
+                android:id="@+id/CpuGeneration"
+                android:layout_width="180sp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/CpuMemoryType"
+                app:layout_constraintTop_toTopOf="@+id/CpuGenerationView"
+                tools:text="10" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" UAH"
+                android:textSize="18sp"
+                android:textStyle="bold"
+
+                app:layout_constraintStart_toEndOf="@+id/cpuPrice"
+                app:layout_constraintTop_toTopOf="@+id/cpuPrice" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
