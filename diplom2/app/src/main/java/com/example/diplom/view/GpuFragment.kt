@@ -38,6 +38,38 @@ class GPUFragment : BaseFragment<FragmentGpuBinding>(FragmentGpuBinding::inflate
         viewModel.gpuLiveData.observe(viewLifecycleOwner) {
             it?.let { adapter.submitList(it) }
         }
+        lifecycleScope.launch {
+            val buttonAmd = binding.nvidiaSort
+            buttonAmd.setOnClickListener {
+                lifecycleScope.launch {
+
+                    viewModel.sortByNvidia()
+                    recyclerView.scrollToPosition(0)
+                }
+
+            }
+            val buttonIntel = binding.amdSort
+            buttonIntel.setOnClickListener {
+                lifecycleScope.launch {
+                    viewModel.sortByAmd()
+                    recyclerView.scrollToPosition(0)
+                }
+            }
+            val buttonLowPrice = binding.maxSort
+            buttonLowPrice.setOnClickListener {
+                lifecycleScope.launch {
+                    viewModel.sortByMax()
+                    recyclerView.scrollToPosition(0)
+                }
+            }
+            val buttonMaxPrice = binding.minSort
+            buttonMaxPrice.setOnClickListener {
+                lifecycleScope.launch {
+                    viewModel.sortByLow()
+                    recyclerView.scrollToPosition(0)
+                }
+            }
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {

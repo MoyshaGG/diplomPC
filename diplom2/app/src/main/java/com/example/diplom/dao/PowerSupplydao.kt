@@ -12,6 +12,9 @@ interface PowerSupplydao {
     @Query("SELECT * FROM power_supply WHERE power_supply_model_name LIKE :searchQuery ")
     fun searchPowerSupply(searchQuery: String): Flow<List<PowerSupply>>
 
+    @Query("SELECT * FROM power_supply LIMIT :limit")
+    suspend fun getLimitedPowerSupply(limit: Int): List<PowerSupply>
+
     @Query("SELECT * FROM power_supply")
     fun getAllPowerSupplyLiveData(): LiveData<List<PowerSupply>>
 

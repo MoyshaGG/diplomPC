@@ -30,33 +30,7 @@ class CPUFragment : BaseFragment<FragmentCPUBinding>(FragmentCPUBinding::inflate
         super.onViewCreated(view, savedInstanceState)
         setHasOptionsMenu(true)
         init()
-        lifecycleScope.launch {
-            val buttonAmd = binding.amdSort
-            buttonAmd.setOnClickListener {
-                lifecycleScope.launch {
-                    viewModel.sortByAmd()
-                }
-            }
-            val buttonIntel = binding.intelSort
-            buttonIntel.setOnClickListener {
-                lifecycleScope.launch {
-                    viewModel.sortByIntel()
-                }
-            }
-            val buttonLowPrice = binding.pricelowsort
-            buttonLowPrice.setOnClickListener {
-                lifecycleScope.launch {
 
-                    viewModel.sortByLow()
-                }
-            }
-            val buttonMaxPrice = binding.pricemaxsort
-            buttonMaxPrice.setOnClickListener {
-                lifecycleScope.launch {
-                    viewModel.sortByMax()
-                }
-            }
-        }
     }
 
     private fun init() {
@@ -67,10 +41,41 @@ class CPUFragment : BaseFragment<FragmentCPUBinding>(FragmentCPUBinding::inflate
         recyclerView.layoutManager = LinearLayoutManager(this.context)
         adapter = CPUadapter(this)
         recyclerView.adapter = adapter
-        viewModel.users.observe(viewLifecycleOwner) {
+        viewModel.cpuLiveData.observe(viewLifecycleOwner) {
             it?.let { adapter.submitList(it) }
         }
+        lifecycleScope.launch {
+            val buttonAmd = binding.amdSort
+            buttonAmd.setOnClickListener {
+                lifecycleScope.launch {
 
+                    viewModel.sortByAmd()
+                    recyclerView.scrollToPosition(0)
+                }
+
+            }
+            val buttonIntel = binding.intelSort
+            buttonIntel.setOnClickListener {
+                lifecycleScope.launch {
+                    viewModel.sortByIntel()
+                    recyclerView.scrollToPosition(0)
+                }
+            }
+            val buttonLowPrice = binding.pricelowsort
+            buttonLowPrice.setOnClickListener {
+                lifecycleScope.launch {
+                    viewModel.sortByLow()
+                    recyclerView.scrollToPosition(0)
+                }
+            }
+            val buttonMaxPrice = binding.pricemaxsort
+            buttonMaxPrice.setOnClickListener {
+                lifecycleScope.launch {
+                    viewModel.sortByMax()
+                    recyclerView.scrollToPosition(0)
+                }
+            }
+        }
 
     }
 

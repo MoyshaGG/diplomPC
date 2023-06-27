@@ -17,6 +17,9 @@ interface MotherboardDao {
     @Query("SELECT * FROM motherboard WHERE id = :id")
     suspend fun getMotherboardLiveDataById(id:Int): List<Motherboard>
 
+  @Query("SELECT * FROM motherboard LIMIT :limit")
+  suspend fun getLimitedMotherboard(limit: Int): List<Motherboard>
+
   //  @Query("SELECT * FROM motherboard WHERE motherboard_name LIKE :searchQuery ")
   @Query("SELECT * FROM motherboard WHERE motherboard_name LIKE :searchQuery AND motherboard_socket = :socket")
   fun searchMother(searchQuery: String, socket: String): Flow<List<Motherboard>>

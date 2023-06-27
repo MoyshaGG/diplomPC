@@ -34,6 +34,14 @@ class StorageViewModel (application: Application) : AndroidViewModel(application
         }
     }
 
+    suspend fun sortSSD() {
+        _storageLiveData.value = storageDataBase.getSSD()
+    }
+
+    suspend fun sortHDD() {
+        _storageLiveData.value = storageDataBase.getHDD()
+    }
+
     private suspend fun loadStorageData() {
         _storageLiveData.value = storageDataBase.getAllStorage()
     }

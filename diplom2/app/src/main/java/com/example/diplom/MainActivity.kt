@@ -25,10 +25,11 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        //
+        // supportActionBar?.setDisplayShowTitleEnabled(false)
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-
         mainViewmodel = ViewModelProvider(this)[MainViewModel::class.java]
     }
 }

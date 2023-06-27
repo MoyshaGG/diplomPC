@@ -15,7 +15,7 @@ import com.example.diplom.model.PCComponentItem
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class StartViewModel (application: Application) : AndroidViewModel(application)  {
+class StartViewModel(application: Application) : AndroidViewModel(application) {
     private val data: Data = Data()
     private val _startLiveData = MutableLiveData<List<PCBuild>>()
     val startLiveData: LiveData<List<PCBuild>> = _startLiveData
@@ -23,13 +23,14 @@ class StartViewModel (application: Application) : AndroidViewModel(application) 
     val users = pcbuildDataBase.getAllBuilds()
 
     init {
-        viewModelScope.launch (Dispatchers.IO){
+        viewModelScope.launch(Dispatchers.IO) {
             insertPcBuildToDataBase()
         }
         viewModelScope.launch(Dispatchers.Main) {
             loadStartData()
         }
     }
+
     fun getBuildLiveData(id: Int): PCBuild {
         return pcbuildDataBase.getBuildLiveData(id).value!!
     }
@@ -37,10 +38,27 @@ class StartViewModel (application: Application) : AndroidViewModel(application) 
     private suspend fun loadStartData() {
         _startLiveData.value = pcbuildDataBase.getAllBuild()
     }
+
     private suspend fun insertPcBuildToDataBase() {
         if (pcbuildDataBase.count() == 0) {
             for (pcbuild in data.pcBuildList)
                 pcbuildDataBase.insert(pcbuild)
+        }
+    }
+
+    private suspend fun deletePcBuild(pcBuild: PCBuild) {
+        pcbuildDataBase.delete(pcBuild)
+
+
+    }
+
+    fun deletePc(pcBuild: PCBuild) {
+        viewModelScope.launch(Dispatchers.IO) {
+            deletePcBuild(pcBuild)
+
+        }
+        viewModelScope.launch(Dispatchers.Main) {
+            loadStartData()
         }
     }
 

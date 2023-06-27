@@ -14,6 +14,7 @@ import com.example.diplom.model.Cooler
 import com.example.diplom.model.Data
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class CoolerViewModel(application: Application) : AndroidViewModel(application) {
     private val data: Data = Data()
@@ -38,9 +39,6 @@ class CoolerViewModel(application: Application) : AndroidViewModel(application) 
         }
     }
 
-    private suspend fun loadCoolerData(TDP: Int) {
-        _coolerLiveData.value = coolerDataBase.getAllCooler(TDP)
-    }
 
     suspend fun getCpuById(cpuId: Int): CPU {
         Log.d("cpuId = + $cpuId", cpuId.toString())
@@ -48,12 +46,31 @@ class CoolerViewModel(application: Application) : AndroidViewModel(application) 
         return cpuListed[0]
     }
 
+    private suspend fun loadCoolerData(TDP: Int) {
+        _coolerLiveData.value = coolerDataBase.getAllCooler(TDP)
+    }
+
     private suspend fun insertCoolerToDataBase() {
         if (coolerDataBase.count() == 0) {
-            for (cooler in data.coolerList)
+            for (cooler in data.coolerList.take(2))
                 coolerDataBase.insert(cooler)
+
+            // Фоновая операция для загрузки оставшихся данных
+
+            withContext(Dispatchers.IO) {
+                for (cooler in data.coolerList.drop(2)) // Пропускаем первые 7 элементов и загружаем остальные
+                    coolerDataBase.insert(cooler)
+            }
+
+            // Обновление RecyclerView после загрузки остальных данных
+            withContext(Dispatchers.Main) {
+                loadCoolerData(cpuTDP)
+            }
+
         }
+
     }
+
     suspend fun getCoolerById(itemId: Int): Cooler {
         Log.d("cpuId = + $itemId", itemId.toString())
         val CoolerListed: List<Cooler> = coolerDataBase.getCoolerLiveDataById(itemId)

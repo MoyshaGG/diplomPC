@@ -3,6 +3,7 @@ package com.example.diplom.adapter
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
@@ -14,10 +15,12 @@ import com.example.diplom.databinding.ItemPcBinding
 import com.example.diplom.databinding.ItemRamBinding
 import com.example.diplom.model.PCBuild
 import com.example.diplom.model.RamMemory
+import com.example.diplom.viewmodel.StartViewModel
 
-class StartMainAdapter(private val onItemClick: IOnItemClick) :
+class StartMainAdapter(private val onItemClick: IOnItemClick , private val viewModel: StartViewModel) :
     ListAdapter<PCBuild, StartMainAdapter.PcBuildViewHolder>(object :
         DiffUtil.ItemCallback<PCBuild>() {
+
         override fun areItemsTheSame(
             oldItem: PCBuild,
             newItem: PCBuild
@@ -47,7 +50,7 @@ class StartMainAdapter(private val onItemClick: IOnItemClick) :
         private val namePcBuildTextView: TextView = binding.namePc
         private val pcBuildPriceTextView: TextView = binding.pcPrice
         private val PCImageView: ImageView = binding.imagePcRecycle
-
+    private val buttonDelete: Button = binding.deleteButton
 
         fun bind(item: PCBuild, context: Context) {
             namePcBuildTextView.text = item.cpu!!.cpuName + " + " + item.gpu!!.gpuName
@@ -65,6 +68,9 @@ class StartMainAdapter(private val onItemClick: IOnItemClick) :
                 .into(PCImageView)
             itemView.setOnClickListener {
                 onItemClick.onClick(item.id)
+            }
+            buttonDelete.setOnClickListener{
+                viewModel.deletePc(item)
             }
         }
     }

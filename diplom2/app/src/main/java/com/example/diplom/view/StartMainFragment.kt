@@ -1,10 +1,12 @@
 package com.example.diplom.view
 
+import android.app.AlertDialog
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.util.Log
-import android.view.Menu
-import android.view.MenuInflater
-import android.view.View
+import android.view.*
+import android.widget.TextView
 import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -36,6 +38,7 @@ class StartMainFragment : BaseFragment<FragmentStartMainBinding>(FragmentStartMa
         setHasOptionsMenu(true)
         init()
 
+
     }
 
     private fun init() {
@@ -43,7 +46,7 @@ class StartMainFragment : BaseFragment<FragmentStartMainBinding>(FragmentStartMa
         viewModel = ViewModelProvider(this)[StartViewModel::class.java]
         val recyclerView: RecyclerView = binding.recyclerStartMain
         recyclerView.layoutManager = LinearLayoutManager(this.context, LinearLayoutManager.HORIZONTAL, false)
-        adapter = StartMainAdapter(this)
+        adapter = StartMainAdapter(this, viewModel)
         recyclerView.adapter = adapter
         lifecycleScope.launch {
 
@@ -59,9 +62,30 @@ class StartMainFragment : BaseFragment<FragmentStartMainBinding>(FragmentStartMa
                 fragmentTransaction.addToBackStack(null)
                 fragmentTransaction.commit()
             }
-
+            binding.faqButton.setOnClickListener()
+            {
+                showFaqDialog()
+            }
 
         }
+    }
+
+    private fun showFaqDialog() {
+        val dialogView = LayoutInflater.from(context).inflate(R.layout.dialog_faq, null)
+        val builder = AlertDialog.Builder(context).setView(dialogView)
+        val alertDialog = builder.create()
+        val window = alertDialog.window
+        if (window != null) {
+            val params = WindowManager.LayoutParams().apply {
+                copyFrom(window.attributes)
+                width = WindowManager.LayoutParams.MATCH_PARENT
+                height = WindowManager.LayoutParams.WRAP_CONTENT
+                gravity = Gravity.CENTER
+            }
+            window.attributes = params
+        //    window.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+        }
+        alertDialog.show()
     }
 
 

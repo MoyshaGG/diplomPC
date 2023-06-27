@@ -12,6 +12,9 @@ interface CPUdao {
     @Query("SELECT * FROM cpu WHERE cpu_name LIKE :searchQuery ")
     fun searchCpu(searchQuery: String): Flow<List<CPU>>
 
+    @Query("SELECT * FROM cpu LIMIT :limit")
+    suspend fun getLimitedCpu(limit: Int): List<CPU>
+
     @Query("SELECT * FROM cpu")
     suspend fun getAllCpu(): List<CPU>
 

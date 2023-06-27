@@ -22,13 +22,15 @@ interface CoolerDao {
     @Query("SELECT * FROM cooler WHERE cooler_name LIKE :searchQuery AND cooler_tdp >= :cooler_tdp")
      fun searchAndFilterCooler(searchQuery: String, cooler_tdp: Int): Flow<List<Cooler>>
 
+    @Query("SELECT * FROM cooler WHERE cooler_tdp > :cooler_tdp LIMIT :limit")
+    suspend fun getLimitedCooler(limit: Int, cooler_tdp: Int): List<Cooler>
+
     @Query("SELECT * FROM cooler")
     suspend fun getAllCoolerAnotherTDP(): List<Cooler>
 
     ////////
     @Query("SELECT * FROM cooler WHERE cooler_tdp > :cooler_tdp")
     suspend fun getAllCooler(cooler_tdp: Int): List<Cooler>
-
     ////////
     @Query("SELECT * FROM cooler WHERE id = :id")
     suspend fun getCoolerLiveDataById(id: Int): List<Cooler>

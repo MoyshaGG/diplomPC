@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/faqText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="6dp"
+        android:text="1. Почніть складання ПК з установки процесора в роз'єм материнської плати. Щоб не подряпати стіл металевими елементами на тильній стороні материнки, підкладіть під неї картонну коробку. У разі платформи AMD сокет за замовчуванням відкритий, тоді як у Intel – закритий пластиковою заглушкою, яку треба витягти. Підніміть важіль-засувку праворуч
+         від сокета, акуратно (щоб не пошкодити контакти) встановіть процесор в сокет і опустіть засувку в початкове положення (буде йти туго, але так і повинно бути)."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/ic_processor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/faqText" />
+
+    <TextView
+        android:id="@+id/faqText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="6dp"
+        android:text="2. Встановити боксовий кулер, що поставляється в комплекті з процесором, не складно. Термопаста відразу ж нанесена на його підошву, а механізм кріплення нехитрий. Кулер AMD кріпиться за допомогою металевої притискної скоби, а охолоджувач Intel – на чотири пластикові засувки, які треба сильно притиснути до клацання. В кінці не забудьте вставити конектор живлення процесорного вентилятора до роз'єму материнки, підписаним CPU Fan. Великий баштовий кулер і, тим більше, систему водяного охолодження встановити значно складніше. Перед установкою уважно прочитайте (краще двічі) комплектну інструкцію, а сам процес почніть з нанесення
+        термопасту на процесор (достатньо однієї краплі розміром суху горошину)."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/ic_cooler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/faqText2" />
+
+    <TextView
+        android:id="@+id/faqText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="6dp"
+        android:text="3. Мабуть, найпростіший етап складання ПК – установка оперативної пам'яті. Відігніть засувки на кінцях слоти DIMM, вставте модуль пам'яті правильної стороною (проріз на нижній стороні планки трохи зміщена від центру (спеціально щоб не вставити іншою стороною) і сильно притисніть до клацання. Якщо на материнській платі є чотири або вісім слотів пам'яті, а у вас тільки два модулі, то встановіть їх через один слот, щоб активувати двоканальний режим роботи. Планки пам'яті з високими радіаторами можуть конфліктувати з великим процесорним кулером.
+        Доведеться або ставити пам'ять в крайні слоти, або піднімати вентилятор кулера вище."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/ic_memory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/faqText3" />
+
+    <TextView
+        android:id="@+id/faqText4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="6dp"
+        android:text="4. Тепер підготуйте корпус до встановлення інших комплектуючих: зніміть обидві бічні стінки. Першим в корпус помістіть самий важкий і громіздкий компонент – блок живлення. Залежно від моделі корпусу розташування БЖ може бути верхнім чи нижнім. Якщо модульний БЖ, то підключіть до нього необхідне конкретно для вашої конфігурації ПК кількість кабелів.
+        Якщо не модульний, то закріпіть стяжками зайві дроти, щоб не плуталися під руками."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/ic_motherboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/faqText4" />
+
+    <TextView
+        android:id="@+id/faqText5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="6dp"
+        android:text="5. Наступним етапом монтуємо материнську плату в корпус ПК та підключаємо до неї основні кабелі. Вставити в проріз на задній панелі корпусу інтерфейсну заглушку і, якщо потрібно, монтажні стовпчики для материнської плати (можуть бути готові незнімні). Після цього помістіть в корпус саму материнку з вже встановленим процесором, кулером і оперативкою. Тримати її найзручніше за процесорний кулер. Ретельно загвинтіть материнку гвинтами до стовпчиків, щоб текстоліт не гнувся під вагою інших компонентів у вертикальному положенні ПК. Підключіть до материнці два кабелі живлення– 20+4-pin і 4-pin (або роздвоєний 4+4-pin), а також комплектні корпусні вентилятори (як альтернатива, можуть підключатися безпосередньо до БЖ або до реобасу). Також підключіть до материнці корпусні кнопки включення і перезавантаження ПК), світлові індикатори (працюючого ПК і активності жорсткого диска),
+         а також подовжувачі аудиороз'ємів і портів USB на передній панелі."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/ic_corpus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/faqText5" />
+
+    <TextView
+        android:id="@+id/faqText6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="6dp"
+        android:text="6. Закріпіть в корпусі твердотільні накопичувачі і жорсткі диски. SSD зараз найчастіше встановлюються на тильній стороні рами корпусу, тобто за материнською платою. HDD монтуються за допомогою виброгасящих полозка. Якщо у вас старий корпус і слотів для 2,5-дюймового SSD не має, то його можна пригвинтити тільки однією стороною до отворів 5,25-дюймового відсіку або ж взагалі акуратно укласти в корпусі незакріпленим у «гнізді» між дротів БЖ. А ось з HDD такого краще не робити – може зламатися під впливом власної вібрації. Наостанок підключіть до дисків Molex-кабель живлення від БП і SATA-шлейф передачі даних (поставляється в комплекті з материнкою), а потім закріпіть їх стяжками або,
+        якщо дозволяє довжина, укладіть за задньою стінкою корпусу, щоб не заважали циркуляції повітря."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/ic_hardware"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/faqText6" />
+
+    <TextView
+        android:id="@+id/faqText7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="6dp"
+        android:text="7. Останньою в корпус встановіть відеокарту. Спочатку поверніть засувку слота PCI-E x16 на материнській платі, потім встановіть відюху до клацання,
+         зафіксуйте її строго під кутом 90 градусів за допомогою гвинта і нарешті, якщо потрібно, підключіть 6 - або 8-pin кабель живлення (або відразу два)."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <TextView
+        android:id="@+id/faqText8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="6dp"
+        android:text="8. Встановивши всі внутрішні компоненти ПК, не поспішайте закривати кришки корпусу. Підключіть монітор (якщо є дискретна відеокарта, потрібно підключати до її відеовиходів, а не до аналогічних портів інтегрованої графіки на материнці), клавіатуру і мишку і проведіть тестовий запуск: авось забули підключити якийсь малопомітний проводок або ж просто попався бракований товар."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/faqText7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

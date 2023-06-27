@@ -38,7 +38,21 @@ class GPUViewModel (application: Application) : AndroidViewModel(application)  {
                 gpuDataBase.insert(gpu)
         }
     }
+    suspend fun sortByAmd() {
+        _gpuLiveData.value = gpuDataBase.getAmd()
+    }
 
+    suspend fun sortByNvidia() {
+        _gpuLiveData.value = gpuDataBase.getNvidia()
+    }
+
+    suspend fun sortByLow() {
+        _gpuLiveData.value = gpuDataBase.getLowPrice()
+    }
+
+    suspend fun sortByMax() {
+        _gpuLiveData.value = gpuDataBase.getMaxPrice()
+    }
 
     suspend fun getGpuById(itemId: Int): GPU {
         Log.d("cpuId = + $itemId", itemId.toString())

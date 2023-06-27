@@ -22,9 +22,12 @@ class StorageFragment : BaseFragment<FragmentStorageBinding>(FragmentStorageBind
     private lateinit var activityViewModel : MainViewModel
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
         super.onViewCreated(view, savedInstanceState)
+
         setHasOptionsMenu(true)
         init()
+
     }
     private fun init(){
         activityViewModel = ViewModelProvider(requireActivity())[MainViewModel::class.java]
@@ -43,6 +46,24 @@ class StorageFragment : BaseFragment<FragmentStorageBinding>(FragmentStorageBind
         recyclerView.adapter = adapter
         viewModel.storageLiveData.observe(viewLifecycleOwner) {
             it?.let { adapter.submitList(it) }
+        }
+        lifecycleScope.launch {
+            val buttonHDD = binding.HDDsort
+            buttonHDD.setOnClickListener {
+                lifecycleScope.launch {
+
+                    viewModel.sortHDD()
+                    recyclerView.scrollToPosition(0)
+                }
+
+            }
+            val buttonSSD = binding.SSDsort
+            buttonSSD.setOnClickListener {
+                lifecycleScope.launch {
+                    viewModel.sortSSD()
+                    recyclerView.scrollToPosition(0)
+                }
+            }
         }
 
         binding.applyButton.setOnClickListener(){

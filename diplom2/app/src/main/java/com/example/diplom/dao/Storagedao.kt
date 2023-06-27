@@ -13,7 +13,8 @@ interface Storagedao {
 
     @Query("SELECT * FROM storage WHERE storage_name LIKE :searchQuery ")
     fun searchStorage(searchQuery: String): Flow<List<Storage>>
-
+    @Query("SELECT * FROM storage LIMIT :limit")
+    suspend fun getLimitedStorage(limit: Int): List<Storage>
 
     @Query("SELECT * FROM storage")
     suspend fun getAllStorage(): List<Storage>
@@ -24,6 +25,12 @@ interface Storagedao {
     @Query("SELECT * FROM storage")
     fun getAllStorageLiveData(): LiveData<List<Storage>>
 
+
+    @Query("SELECT * FROM storage WHERE storage_type = 'SSD' ")
+    suspend fun getSSD(): List<Storage>
+
+    @Query("SELECT * FROM storage WHERE storage_type = 'HDD' ")
+    suspend fun getHDD(): List<Storage>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insert(storage: Storage)

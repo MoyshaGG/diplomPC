@@ -15,7 +15,8 @@ interface PcBoxDao {
 
     @Query("SELECT * FROM pcbox WHERE id = :id")
     suspend fun getPcBoxLiveDataById(id:Int): List<PcBox>
-
+    @Query("SELECT * FROM pcbox LIMIT :limit")
+    suspend fun getLimitedPcBox(limit: Int): List<PcBox>
     @Query("SELECT * FROM pcbox")
      fun getAllPcBoxLiveData(): LiveData<List<PcBox>>
 

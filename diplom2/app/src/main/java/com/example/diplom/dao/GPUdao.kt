@@ -14,11 +14,12 @@ interface GPUdao {
 
     @Query("SELECT * FROM gpu WHERE id = :id")
     suspend fun getGpuLiveDataById(id:Int): List<GPU>
-
+    @Query("SELECT * FROM gpu LIMIT :limit")
+    suspend fun getLimitedGpu(limit: Int): List<GPU>
     @Query("SELECT * FROM gpu WHERE gpu_name LIKE :searchQuery ")
     fun searchGpu(searchQuery: String): Flow<List<GPU>>
 
-    @Query("SELECT * FROM gpu")
+    @Query("SELECT * FROM gpu LIMIT 10")
     suspend fun getAllGpu(): List<GPU>
 
     @Query("SELECT COUNT(*) FROM gpu")
@@ -32,5 +33,17 @@ interface GPUdao {
 
     @Update
     suspend   fun update(gpu: GPU)
+
+    @Query("SELECT * FROM gpu WHERE gpu_brand = 'AMD' ORDER BY gpu_name ASC")
+    suspend fun getAmd(): List<GPU>
+
+    @Query("SELECT * FROM gpu WHERE gpu_brand = 'Nvidia' ORDER BY gpu_name ASC")
+    suspend fun getNvidia(): List<GPU>
+
+    @Query("SELECT * FROM gpu ORDER BY gpu_price DESC")
+    suspend fun getLowPrice(): List<GPU>
+
+    @Query("SELECT * FROM gpu ORDER BY gpu_price ASC")
+    suspend fun getMaxPrice(): List<GPU>
 
 }

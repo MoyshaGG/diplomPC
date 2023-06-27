@@ -54,7 +54,54 @@ class Data {
             1339,
             "https://content1.rozetka.com.ua/goods/images/big/215396368.jpg"
         ),
-
+        Storage(
+            5,
+            "SSDNow A400 480GB 2.5 SATAIII 3D",
+            "Kingston",
+            "SSD",
+            "500 mb/s read, 450 mb/s write ",
+            "960 GB",
+            "100 x 69.9 x 7 mm",
+            "SATAIII",
+            2189,
+            "https://content1.rozetka.com.ua/goods/images/big/172239507.jpg"
+        ),
+        Storage(
+            6,
+            "Samsung 870 Evo-Series 500GB 2.5 SATA III",
+            "Samsung",
+            "SSD",
+            "560 mb/s read, 530 mb/s write ",
+            "1 TB",
+            "100 х 69.85 х 6.8 mm",
+            "SATAIII",
+            2956,
+            "https://content1.rozetka.com.ua/goods/images/big/70342641.jpg"
+        ),
+        Storage(
+            7,
+            "Seagate BarraCuda HDD ",
+            "Seagate",
+            "HDD",
+            "7200 rpm",
+            "5 TB",
+            "101.85 x 26.11 x 146.99 mm",
+            "SATAIII",
+            3899,
+            "https://content2.rozetka.com.ua/goods/images/big/12241784.jpg"
+        ),
+        Storage(
+            8,
+            "Toshiba P300 1TB",
+            "Toshiba",
+            "HDD",
+            "7200 rpm ",
+            "2 TB",
+            "26.1 х 101.6 х 147 mm",
+            "SATAIII",
+            2339,
+            "https://content1.rozetka.com.ua/goods/images/big/215396368.jpg"
+        ),
         )
 
     val pcboxList = listOf(
@@ -1225,8 +1272,8 @@ class Data {
             "3GB", // gpu memory size
             250, // gpu TDP
             600, // recommended TDP for power supply
-            699, // gpu price
-            "next",
+            2699, // gpu price
+            "https://content.rozetka.com.ua/goods/images/big/45787410.jpg",
         ),
         GPU(
             54, // gpu id
@@ -1239,8 +1286,8 @@ class Data {
             "3GB", // gpu memory size
             250, // gpu TDP
             600, // recommended TDP for power supply
-            599, // gpu price
-            "https://example.com/geforce_gtx_780.jpg",
+            2599, // gpu price
+            "https://content.rozetka.com.ua/goods/images/big/45787410.jpg",
         ),
 
         GPU(
@@ -1254,8 +1301,8 @@ class Data {
             "2GB", // gpu memory size
             230, // gpu TDP
             550, // recommended TDP for power supply
-            399, // gpu price
-            "https://example.com/geforce_gtx_770.jpg",
+            2399, // gpu price
+            "https://content2.rozetka.com.ua/goods/images/big/276851009.jpg",
         ),
 
         GPU(
@@ -1269,8 +1316,8 @@ class Data {
             "2GB", // gpu memory size
             170, // gpu TDP
             500, // recommended TDP for power supply
-            299, // gpu price
-            "https://example.com/geforce_gtx_760.jpg",
+            2299, // gpu price
+            "https://content2.rozetka.com.ua/goods/images/big/276851009.jpg",
         ),
 
         GPU(
@@ -1284,8 +1331,8 @@ class Data {
             "2GB", // gpu memory size
             60, // gpu TDP
             350, // recommended TDP for power supply
-            159, // gpu price
-            "https://example.com/geforce_gtx_750_ti.jpg",
+            2159, // gpu price
+            "https://content.rozetka.com.ua/goods/images/big/338348348.jpg",
         ),
         GPU(
             58, // gpu id
@@ -1298,8 +1345,8 @@ class Data {
             "1GB", // gpu memory size
             55, // gpu TDP
             300, // recommended TDP for power supply
-            119, // gpu price
-            "https://example.com/geforce_gtx_750.jpg",
+            2119, // gpu price
+            "https://content.rozetka.com.ua/goods/images/big/338348348.jpg",
         ),
 
         GPU(
@@ -1313,8 +1360,8 @@ class Data {
             "2GB", // gpu memory size
             64, // gpu TDP
             350, // recommended TDP for power supply
-            99, // gpu price
-            "https://example.com/geforce_gt_740.jpg",
+            2399, // gpu price
+            "https://content.rozetka.com.ua/goods/images/big/338348348.jpg",
         ),
 
         GPU(
@@ -1328,8 +1375,8 @@ class Data {
             "1GB", // gpu memory size
             38, // gpu TDP
             300, // recommended TDP for power supply
-            69, // gpu price
-            "https://example.com/geforce_gt_730.jpg",
+            2369, // gpu price
+            "https://content.rozetka.com.ua/goods/images/big/338348348.jpg",
         ),
 
         GPU(
@@ -1343,8 +1390,8 @@ class Data {
             "4GB", // gpu memory size
             190, // gpu TDP
             650, // recommended TDP for power supply
-            499, // gpu price
-            "https://example.com/geforce_gtx_690.jpg",
+            1499, // gpu price
+            "https://content1.rozetka.com.ua/goods/images/big/45539776.jpg",
         ),
         GPU(
             62, // gpu id
@@ -1357,8 +1404,8 @@ class Data {
             "2GB", // gpu memory size
             195, // gpu TDP
             550, // recommended TDP for power supply
-            399, // gpu price
-            "https://example.com/geforce_gtx_680.jpg",
+            1399, // gpu price
+            "https://content1.rozetka.com.ua/goods/images/big/45539776.jpg",
         ),
 
         GPU(
@@ -1372,8 +1419,8 @@ class Data {
             "2GB", // gpu memory size
             170, // gpu TDP
             500, // recommended TDP for power supply
-            299, // gpu price
-            "https://example.com/geforce_gtx_670.jpg",
+            1299, // gpu price
+            "https://content1.rozetka.com.ua/goods/images/big/45539776.jpg",
         ),
 
         GPU(
@@ -1387,8 +1434,8 @@ class Data {
             "2GB", // gpu memory size
             150, // gpu TDP
             450, // recommended TDP for power supply
-            249, // gpu price
-            "https://example.com/geforce_gtx_660_ti.jpg",
+            1249, // gpu price
+            "https://content1.rozetka.com.ua/goods/images/big/45539776.jpg",
         ),
 
         GPU(
@@ -1402,8 +1449,8 @@ class Data {
             "2GB", // gpu memory size
             140, // gpu TDP
             400, // recommended TDP for power supply
-            199, // gpu price
-            "https://example.com/geforce_gtx_660.jpg",
+            1199, // gpu price
+            "https://content1.rozetka.com.ua/goods/images/big/45539776.jpg",
         ),
         GPU(
             66, // gpu id
@@ -1416,8 +1463,8 @@ class Data {
             "2GB", // gpu memory size
             130, // gpu TDP
             400, // recommended TDP for power supply
-            149, // gpu price
-            "https://example.com/geforce_gtx_650_ti_boost.jpg",
+            1149, // gpu price
+            "https://content1.rozetka.com.ua/goods/images/big/45539776.jpg",
         ),
 
         GPU(
@@ -1431,8 +1478,8 @@ class Data {
             "1GB", // gpu memory size
             110, // gpu TDP
             350, // recommended TDP for power supply
-            119, // gpu price
-            "https://example.com/geforce_gtx_650_ti.jpg",
+            1119, // gpu price
+            "https://content1.rozetka.com.ua/goods/images/big/45539776.jpg",
         ),
 
         GPU(
@@ -1446,8 +1493,8 @@ class Data {
             "1GB", // gpu memory size
             64, // gpu TDP
             300, // recommended TDP for power supply
-            89, // gpu price
-            "https://example.com/geforce_gtx_650.jpg",
+            1189, // gpu price
+            "https://content1.rozetka.com.ua/goods/images/big/45539776.jpg",
         ),
         GPU(
             69, // gpu id
@@ -1460,8 +1507,8 @@ class Data {
             "16GB", // gpu memory size
             290, // gpu TDP
             600, // recommended TDP for power supply
-            1099, // gpu price
-            "https://example.com/radeon_rx_7900_xtx.jpg",
+            51079, // gpu price
+            "https://content2.rozetka.com.ua/goods/images/big/306337101.jpg",
         ),
 
         GPU(
@@ -1475,8 +1522,8 @@ class Data {
             "16GB", // gpu memory size
             250, // gpu TDP
             550, // recommended TDP for power supply
-            999, // gpu price
-            "https://example.com/radeon_rx_7900_xt.jpg",
+            49079, // gpu price
+            "https://content1.rozetka.com.ua/goods/images/big/304245651.jpg",
         ),
 
         GPU(
@@ -1490,8 +1537,8 @@ class Data {
             "16GB", // gpu memory size
             300, // gpu TDP
             650, // recommended TDP for power supply
-            1199, // gpu price
-            "https://example.com/radeon_rx_6950_xt.jpg",
+            30475, // gpu price
+            "https://content2.rozetka.com.ua/goods/images/big/338363676.jpg",
         ),
 
         GPU(
@@ -1505,8 +1552,8 @@ class Data {
             "16GB", // gpu memory size
             300, // gpu TDP
             650, // recommended TDP for power supply
-            999, // gpu price
-            "https://example.com/radeon_rx_6900_xt.jpg",
+            28304, // gpu price
+            "https://content1.rozetka.com.ua/goods/images/big/305835554.png",
         ),
         GPU(
             73, // gpu id
@@ -1519,8 +1566,8 @@ class Data {
             "16GB", // gpu memory size
             300, // gpu TDP
             650, // recommended TDP for power supply
-            999, // gpu price
-            "https://example.com/radeon_rx_6800_xt.jpg",
+            28999, // gpu price
+            "https://content1.rozetka.com.ua/goods/images/big/288164971.jpg",
         ),
 
         GPU(
@@ -1534,8 +1581,8 @@ class Data {
             "16GB", // gpu memory size
             250, // gpu TDP
             600, // recommended TDP for power supply
-            799, // gpu price
-            "https://example.com/radeon_rx_6800.jpg",
+            27799, // gpu price
+            "https://content1.rozetka.com.ua/goods/images/big/268133099.jpg",
         ),
 
         GPU(
@@ -1549,8 +1596,8 @@ class Data {
             "12GB", // gpu memory size
             200, // gpu TDP
             550, // recommended TDP for power supply
-            699, // gpu price
-            "https://example.com/radeon_rx_6750_xt.jpg",
+            21229, // gpu price
+            "https://content1.rozetka.com.ua/goods/images/big/275197463.jpg",
         ),
 
         GPU(
@@ -1564,8 +1611,8 @@ class Data {
             "12GB", // gpu memory size
             230, // gpu TDP
             600, // recommended TDP for power supply
-            649, // gpu price
-            "https://example.com/radeon_rx_6700_xt.jpg",
+            38899, // gpu price
+            "https://content.rozetka.com.ua/goods/images/big/165161262.jpg",
         ),
         GPU(
             77, // gpu id
@@ -1578,8 +1625,8 @@ class Data {
             "12GB", // gpu memory size
             180, // gpu TDP
             500, // recommended TDP for power supply
-            549, // gpu price
-            "https://example.com/radeon_rx_6700.jpg",
+            31549, // gpu price
+            "https://content.rozetka.com.ua/goods/images/big/343337402.jpg",
         ),
 
         GPU(
@@ -1593,8 +1640,8 @@ class Data {
             "8GB", // gpu memory size
             150, // gpu TDP
             450, // recommended TDP for power supply
-            399, // gpu price
-            "https://example.com/radeon_rx_6650_xt.jpg",
+            14589, // gpu price
+            "https://content2.rozetka.com.ua/goods/images/big/275192494.jpg",
         ),
 
         GPU(
@@ -1608,8 +1655,8 @@ class Data {
             "8GB", // gpu memory size
             130, // gpu TDP
             400, // recommended TDP for power supply
-            349, // gpu price
-            "https://example.com/radeon_rx_6600_xt.jpg",
+            12149, // gpu price
+            "https://content2.rozetka.com.ua/goods/images/big/265965422.png",
         ),
 
         GPU(
@@ -1623,8 +1670,8 @@ class Data {
             "8GB", // gpu memory size
             120, // gpu TDP
             350, // recommended TDP for power supply
-            299, // gpu price
-            "https://example.com/radeon_rx_6600.jpg",
+            10229, // gpu price
+            "https://content2.rozetka.com.ua/goods/images/big/232461258.jpg",
         ),
         GPU(
             81, // gpu id
@@ -1637,8 +1684,8 @@ class Data {
             "8GB", // gpu memory size
             100, // gpu TDP
             300, // recommended TDP for power supply
-            249, // gpu price
-            "https://example.com/radeon_rx_6500_xt.jpg",
+            8349, // gpu price
+            "https://content2.rozetka.com.ua/goods/images/big/249084690.jpg",
         ),
 
         GPU(
@@ -1652,8 +1699,8 @@ class Data {
             "4GB", // gpu memory size
             80, // gpu TDP
             250, // recommended TDP for power supply
-            199, // gpu price
-            "https://example.com/radeon_rx_6400.jpg",
+            6909, // gpu price
+            "https://content1.rozetka.com.ua/goods/images/big/310553255.jpg",
         ),
 
         GPU(
@@ -1667,8 +1714,8 @@ class Data {
             "8GB", // gpu memory size
             225, // gpu TDP
             600, // recommended TDP for power supply
-            449, // gpu price
-            "https://example.com/radeon_rx_5700_xt.jpg",
+            7600, // gpu price
+            "https://content.rozetka.com.ua/goods/images/big/338904158.jpg",
         ),
 
         GPU(
@@ -1682,8 +1729,8 @@ class Data {
             "8GB", // gpu memory size
             180, // gpu TDP
             550, // recommended TDP for power supply
-            379, // gpu price
-            "https://example.com/radeon_rx_5700.jpg",
+            7758, // gpu price
+            "https://content.rozetka.com.ua/goods/images/big/324959159.jpg",
         ),
         GPU(
             85, // gpu id
@@ -1696,8 +1743,8 @@ class Data {
             "6GB", // gpu memory size
             150, // gpu TDP
             450, // recommended TDP for power supply
-            299, // gpu price
-            "https://example.com/radeon_rx_5600_xt.jpg",
+            16499, // gpu price
+            "https://content2.rozetka.com.ua/goods/images/big/250117759.jpg",
         ),
 
         GPU(
@@ -1711,8 +1758,8 @@ class Data {
             "8GB", // gpu memory size
             130, // gpu TDP
             400, // recommended TDP for power supply
-            229, // gpu price
-            "https://example.com/radeon_rx_5500_xt.jpg",
+            11248, // gpu price
+            "https://content1.rozetka.com.ua/goods/images/big/317202035.jpg",
         ),
 
         GPU(
@@ -1726,8 +1773,8 @@ class Data {
             "16GB", // gpu memory size
             300, // gpu TDP
             600, // recommended TDP for power supply
-            699, // gpu price
-            "https://example.com/radeon_vii.jpg",
+            21335, // gpu price
+            "https://content1.rozetka.com.ua/goods/images/big/85402509.jpg",
         ),
 
         GPU(
@@ -1741,8 +1788,8 @@ class Data {
             "8GB", // gpu memory size
             295, // gpu TDP
             650, // recommended TDP for power supply
-            499, // gpu price
-            "https://example.com/radeon_rx_vega_64.jpg",
+            7440, // gpu price
+            "https://content2.rozetka.com.ua/goods/images/big/310608380.jpg",
         ),
         GPU(
             89, // gpu id
@@ -1755,8 +1802,8 @@ class Data {
             "8GB", // gpu memory size
             210, // gpu TDP
             500, // recommended TDP for power supply
-            399, // gpu price
-            "https://example.com/radeon_rx_vega_56.jpg",
+            5566, // gpu price
+            "https://content.rozetka.com.ua/goods/images/big/305037801.jpg",
         ),
 
         GPU(
@@ -1770,8 +1817,8 @@ class Data {
             "8GB", // gpu memory size
             225, // gpu TDP
             500, // recommended TDP for power supply
-            279, // gpu price
-            "https://example.com/radeon_rx_590.jpg",
+            6140, // gpu price
+            "https://content2.rozetka.com.ua/goods/images/big/324686242.jpg",
         ),
 
         GPU(
@@ -1785,8 +1832,8 @@ class Data {
             "8GB", // gpu memory size
             225, // gpu TDP
             500, // recommended TDP for power supply
-            269, // gpu price
-            "https://example.com/radeon_rx_580_xtr.jpg",
+            14234, // gpu price
+            "https://content2.rozetka.com.ua/goods/images/big/52184549.jpg",
         ),
 
         GPU(
@@ -1800,8 +1847,8 @@ class Data {
             "8GB", // gpu memory size
             185, // gpu TDP
             500, // recommended TDP for power supply
-            249, // gpu price
-            "https://example.com/radeon_rx_580.jpg",
+            4550, // gpu price
+            "https://content2.rozetka.com.ua/goods/images/big/336173945.jpg",
         ),
         GPU(
             93, // gpu id
@@ -1814,8 +1861,8 @@ class Data {
             "4GB", // gpu memory size
             150, // gpu TDP
             450, // recommended TDP for power supply
-            199, // gpu price
-            "https://example.com/radeon_rx_570.jpg",
+            5948, // gpu price
+            "https://content1.rozetka.com.ua/goods/images/big/311800145.jpg",
         ),
 
         GPU(
@@ -1829,8 +1876,8 @@ class Data {
             "4GB", // gpu memory size
             80, // gpu TDP
             400, // recommended TDP for power supply
-            129, // gpu price
-            "https://example.com/radeon_rx_560.jpg",
+            7019, // gpu price
+            "https://content1.rozetka.com.ua/goods/images/big/312892946.jpg",
         ),
 
         GPU(
@@ -1844,8 +1891,8 @@ class Data {
             "4GB", // gpu memory size
             50, // gpu TDP
             350, // recommended TDP for power supply
-            99, // gpu price
-            "https://example.com/radeon_rx_550.jpg",
+            4309, // gpu price
+            "https://content2.rozetka.com.ua/goods/images/big/327945836.jpg",
         ),
 
         GPU(
@@ -1859,8 +1906,8 @@ class Data {
             "8GB", // gpu memory size
             150, // gpu TDP
             500, // recommended TDP for power supply
-            249, // gpu price
-            "https://example.com/radeon_rx_480.jpg",
+            3075, // gpu price
+            "https://content1.rozetka.com.ua/goods/images/big/264731771.jpg",
         ),
         GPU(
             97, // gpu id
@@ -1873,8 +1920,8 @@ class Data {
             "4GB", // gpu memory size
             120, // gpu TDP
             500, // recommended TDP for power supply
-            159, // gpu price
-            "https://example.com/radeon_rx_470.jpg",
+            2800, // gpu price
+            "https://content1.rozetka.com.ua/goods/images/big/310866490.jpg",
         ),
 
         GPU(
@@ -1888,8 +1935,8 @@ class Data {
             "4GB", // gpu memory size
             75, // gpu TDP
             350, // recommended TDP for power supply
-            109, // gpu price
-            "https://example.com/radeon_rx_460.jpg",
+            2529, // gpu price
+            "https://content.rozetka.com.ua/goods/images/big/172516722.jpg",
         ),
 
         GPU(
@@ -1903,496 +1950,9 @@ class Data {
             "4GB", // gpu memory size
             275, // gpu TDP
             600, // recommended TDP for power supply
-            499, // gpu price
-            "https://example.com/radeon_r9_fury_x.jpg",
+            7499, // gpu price
+            "https://content2.rozetka.com.ua/goods/images/big/47555214.jpg",
         ),
-
-        GPU(
-            100, // gpu id
-            "Radeon R9 Fury", // gpu name
-            "AMD", // gpu brand
-            1000, // gpu clock speed
-            "HBM", // gpu ram memory
-            "HBM", // gpu ram type
-            "4096bit", // gpu memory bus
-            "4GB", // gpu memory size
-            275, // gpu TDP
-            600, // recommended TDP for power supply
-            449, // gpu price
-            "https://example.com/radeon_r9_fury.jpg",
-        ),
-        GPU(
-            101, // gpu id
-            "Radeon R9 Nano", // gpu name
-            "AMD", // gpu brand
-            1000, // gpu clock speed
-            "HBM", // gpu ram memory
-            "HBM", // gpu ram type
-            "4096bit", // gpu memory bus
-            "4GB", // gpu memory size
-            175, // gpu TDP
-            550, // recommended TDP for power supply
-            499, // gpu price
-            "https://example.com/radeon_r9_nano.jpg",
-        ),
-
-        GPU(
-            102, // gpu id
-            "Radeon R9 390X", // gpu name
-            "AMD", // gpu brand
-            1050, // gpu clock speed
-            "GDDR5", // gpu ram memory
-            "DDR5", // gpu ram type
-            "512bit", // gpu memory bus
-            "8GB", // gpu memory size
-            275, // gpu TDP
-            600, // recommended TDP for power supply
-            399, // gpu price
-            "https://example.com/radeon_r9_390x.jpg",
-        ),
-
-        GPU(
-            103, // gpu id
-            "Radeon R9 390", // gpu name
-            "AMD", // gpu brand
-            1000, // gpu clock speed
-            "GDDR5", // gpu ram memory
-            "DDR5", // gpu ram type
-            "512bit", // gpu memory bus
-            "8GB", // gpu memory size
-            275, // gpu TDP
-            600, // recommended TDP for power supply
-            329, // gpu price
-            "https://example.com/radeon_r9_390.jpg",
-        ),
-
-        GPU(
-            104, // gpu id
-            "Radeon R9 380X", // gpu name
-            "AMD", // gpu brand
-            970, // gpu clock speed
-            "GDDR5", // gpu ram memory
-            "DDR5", // gpu ram type
-            "256bit", // gpu memory bus
-            "4GB", // gpu memory size
-            190, // gpu TDP
-            550, // recommended TDP for power supply
-            229, // gpu price
-            "https://example.com/radeon_r9_380x.jpg",
-        ),
-        GPU(
-            105, // gpu id
-            "Radeon R9 380", // gpu name
-            "AMD", // gpu brand
-            970, // gpu clock speed
-            "GDDR5", // gpu ram memory
-            "DDR5", // gpu ram type
-            "256bit", // gpu memory bus
-            "4GB", // gpu memory size
-            190, // gpu TDP
-            550, // recommended TDP for power supply
-            199, // gpu price
-            "https://example.com/radeon_r9_380.jpg",
-        ),
-
-        GPU(
-            106, // gpu id
-            "Radeon R7 370", // gpu name
-            "AMD", // gpu brand
-            975, // gpu clock speed
-            "GDDR5", // gpu ram memory
-            "DDR5", // gpu ram type
-            "256bit", // gpu memory bus
-            "4GB", // gpu memory size
-            150, // gpu TDP
-            500, // recommended TDP for power supply
-            149, // gpu price
-            "https://example.com/radeon_r7_370.jpg",
-        ),
-
-        GPU(
-            107, // gpu id
-            "Radeon R7 360", // gpu name
-            "AMD", // gpu brand
-            1050, // gpu clock speed
-            "GDDR5", // gpu ram memory
-            "DDR5", // gpu ram type
-            "128bit", // gpu memory bus
-            "2GB", // gpu memory size
-            100, // gpu TDP
-            400, // recommended TDP for power supply
-            99, // gpu price
-            "https://example.com/radeon_r7_360.jpg",
-        ),
-
-        GPU(
-            108, // gpu id
-            "Radeon R9 295X2", // gpu name
-            "AMD", // gpu brand
-            1018, // gpu clock speed
-            "GDDR5", // gpu ram memory
-            "DDR5", // gpu ram type
-            "512bit", // gpu memory bus
-            "8GB", // gpu memory size
-            500, // gpu TDP
-            1000, // recommended TDP for power supply
-            1499, // gpu price
-            "https://example.com/radeon_r9_295x2.jpg",
-        ),
-        GPU(
-            109, // gpu id
-            "Radeon R9 290X", // gpu name
-            "AMD", // gpu brand
-            1000, // gpu clock speed
-            "GDDR5", // gpu ram memory
-            "DDR5", // gpu ram type
-            "512bit", // gpu memory bus
-            "4GB", // gpu memory size
-            250, // gpu TDP
-            600, // recommended TDP for power supply
-            399, // gpu price
-            "https://example.com/radeon_r9_290x.jpg",
-        ),
-
-        GPU(
-            110, // gpu id
-            "Radeon R9 290", // gpu name
-            "AMD", // gpu brand
-            947, // gpu clock speed
-            "GDDR5", // gpu ram memory
-            "DDR5", // gpu ram type
-            "512bit", // gpu memory bus
-            "4GB", // gpu memory size
-            250, // gpu TDP
-            600, // recommended TDP for power supply
-            299, // gpu price
-            "https://example.com/radeon_r9_290.jpg",
-        ),
-
-        GPU(
-            111, // gpu id
-            "Radeon R9 280X", // gpu name
-            "AMD", // gpu brand
-            1000, // gpu clock speed
-            "GDDR5", // gpu ram memory
-            "DDR5", // gpu ram type
-            "384bit", // gpu memory bus
-            "3GB", // gpu memory size
-            250, // gpu TDP
-            550, // recommended TDP for power supply
-            249, // gpu price
-            "https://example.com/radeon_r9_280x.jpg",
-        ),
-
-        GPU(
-            112, // gpu id
-            "Radeon R9 285", // gpu name
-            "AMD", // gpu brand
-            918, // gpu clock speed
-            "GDDR5", // gpu ram memory
-            "DDR5", // gpu ram type
-            "256bit", // gpu memory bus
-            "2GB", // gpu memory size
-            190, // gpu TDP
-            500, // recommended TDP for power supply
-            199, // gpu price
-            "https://example.com/radeon_r9_285.jpg",
-        ),
-        GPU(
-            113, // gpu id
-            "Radeon R9 280", // gpu name
-            "AMD", // gpu brand
-            933, // gpu clock speed
-            "GDDR5", // gpu ram memory
-            "DDR5", // gpu ram type
-            "384bit", // gpu memory bus
-            "3GB", // gpu memory size
-            250, // gpu TDP
-            550, // recommended TDP for power supply
-            199, // gpu price
-            "https://example.com/radeon_r9_280.jpg",
-        ),
-
-        GPU(
-            114, // gpu id
-            "Radeon R9 270X", // gpu name
-            "AMD", // gpu brand
-            1050, // gpu clock speed
-            "GDDR5", // gpu ram memory
-            "DDR5", // gpu ram type
-            "256bit", // gpu memory bus
-            "2GB", // gpu memory size
-            180, // gpu TDP
-            500, // recommended TDP for power supply
-            149, // gpu price
-            "https://example.com/radeon_r9_270x.jpg",
-        ),
-
-        GPU(
-            115, // gpu id
-            "Radeon R9 270", // gpu name
-            "AMD", // gpu brand
-            925, // gpu clock speed
-            "GDDR5", // gpu ram memory
-            "DDR5", // gpu ram type
-            "256bit", // gpu memory bus
-            "2GB", // gpu memory size
-            150, // gpu TDP
-            500, // recommended TDP for power supply
-            129, // gpu price
-            "https://example.com/radeon_r9_270.jpg",
-        ),
-
-        GPU(
-            116, // gpu id
-            "Radeon R7 265", // gpu name
-            "AMD", // gpu brand
-            925, // gpu clock speed
-            "GDDR5", // gpu ram memory
-            "DDR5", // gpu ram type
-            "256bit", // gpu memory bus
-            "2GB", // gpu memory size
-            150, // gpu TDP
-            500, // recommended TDP for power supply
-            99, // gpu price
-            "https://example.com/radeon_r7_265.jpg",
-        ),
-        GPU(
-            117, // gpu id
-            "Radeon R7 260X", // gpu name
-            "AMD", // gpu brand
-            1100, // gpu clock speed
-            "GDDR5", // gpu ram memory
-            "DDR5", // gpu ram type
-            "128bit", // gpu memory bus
-            "2GB", // gpu memory size
-            115, // gpu TDP
-            450, // recommended TDP for power supply
-            89, // gpu price
-            "https://example.com/radeon_r7_260x.jpg",
-        ),
-
-        GPU(
-            118, // gpu id
-            "Radeon R7 260", // gpu name
-            "AMD", // gpu brand
-            1000, // gpu clock speed
-            "GDDR5", // gpu ram memory
-            "DDR5", // gpu ram type
-            "128bit", // gpu memory bus
-            "2GB", // gpu memory size
-            95, // gpu TDP
-            400, // recommended TDP for power supply
-            79, // gpu price
-            "https://example.com/radeon_r7_260.jpg",
-        ),
-
-        GPU(
-            119, // gpu id
-            "Radeon R7 250", // gpu name
-            "AMD", // gpu brand
-            1050, // gpu clock speed
-            "GDDR5", // gpu ram memory
-            "DDR5", // gpu ram type
-            "128bit", // gpu memory bus
-            "2GB", // gpu memory size
-            65, // gpu TDP
-            350, // recommended TDP for power supply
-            59, // gpu price
-            "https://example.com/radeon_r7_250.jpg",
-        ),
-
-        GPU(
-            120, // gpu id
-            "Radeon R7 240", // gpu name
-            "AMD", // gpu brand
-            780, // gpu clock speed
-            "DDR3", // gpu ram memory
-            "DDR3", // gpu ram type
-            "128bit", // gpu memory bus
-            "2GB", // gpu memory size
-            30, // gpu TDP
-            300, // recommended TDP for power supply
-            49, // gpu price
-            "https://example.com/radeon_r7_240.jpg",
-        ),
-        GPU(
-            121, // gpu id
-            "Radeon HD 7970", // gpu name
-            "AMD", // gpu brand
-            925, // gpu clock speed
-            "GDDR5", // gpu ram memory
-            "DDR5", // gpu ram type
-            "384bit", // gpu memory bus
-            "3GB", // gpu memory size
-            250, // gpu TDP
-            500, // recommended TDP for power supply
-            199, // gpu price
-            "https://example.com/radeon_hd_7970.jpg",
-        ),
-
-        GPU(
-            122, // gpu id
-            "Radeon HD 7950", // gpu name
-            "AMD", // gpu brand
-            800, // gpu clock speed
-            "GDDR5", // gpu ram memory
-            "DDR5", // gpu ram type
-            "384bit", // gpu memory bus
-            "3GB", // gpu memory size
-            200, // gpu TDP
-            450, // recommended TDP for power supply
-            179, // gpu price
-            "https://example.com/radeon_hd_7950.jpg",
-        ),
-
-        GPU(
-            123, // gpu id
-            "Radeon HD 7870 XT", // gpu name
-            "AMD", // gpu brand
-            925, // gpu clock speed
-            "GDDR5", // gpu ram memory
-            "DDR5", // gpu ram type
-            "256bit", // gpu memory bus
-            "2GB", // gpu memory size
-            180, // gpu TDP
-            400, // recommended TDP for power supply
-            159, // gpu price
-            "https://example.com/radeon_hd_7870_xt.jpg",
-        ),
-
-        GPU(
-            124, // gpu id
-            "Radeon HD 7870", // gpu name
-            "AMD", // gpu brand
-            1000, // gpu clock speed
-            "GDDR5", // gpu ram memory
-            "DDR5", // gpu ram type
-            "256bit", // gpu memory bus
-            "2GB", // gpu memory size
-            175, // gpu TDP
-            400, // recommended TDP for power supply
-            149, // gpu price
-            "https://example.com/radeon_hd_7870.jpg",
-        ),
-        GPU(
-            125, // gpu id
-            "Radeon HD 7850", // gpu name
-            "AMD", // gpu brand
-            860, // gpu clock speed
-            "GDDR5", // gpu ram memory
-            "DDR5", // gpu ram type
-            "256bit", // gpu memory bus
-            "2GB", // gpu memory size
-            130, // gpu TDP
-            400, // recommended TDP for power supply
-            129, // gpu price
-            "https://example.com/radeon_hd_7850.jpg",
-        ),
-
-        GPU(
-            126, // gpu id
-            "Radeon HD 7790", // gpu name
-            "AMD", // gpu brand
-            1000, // gpu clock speed
-            "GDDR5", // gpu ram memory
-            "DDR5", // gpu ram type
-            "128bit", // gpu memory bus
-            "1GB", // gpu memory size
-            85, // gpu TDP
-            350, // recommended TDP for power supply
-            99, // gpu price
-            "https://example.com/radeon_hd_7790.jpg",
-        ),
-
-        GPU(
-            127, // gpu id
-            "Radeon HD 7770", // gpu name
-            "AMD", // gpu brand
-            1000, // gpu clock speed
-            "GDDR5", // gpu ram memory
-            "DDR5", // gpu ram type
-            "128bit", // gpu memory bus
-            "1GB", // gpu memory size
-            80, // gpu TDP
-            350, // recommended TDP for power supply
-            89, // gpu price
-            "https://example.com/radeon_hd_7770.jpg",
-        ),
-
-        GPU(
-            128, // gpu id
-            "Radeon HD 7750", // gpu name
-            "AMD", // gpu brand
-            800, // gpu clock speed
-            "GDDR5", // gpu ram memory
-            "DDR5", // gpu ram type
-            "128bit", // gpu memory bus
-            "1GB", // gpu memory size
-            55, // gpu TDP
-            300, // recommended TDP for power supply
-            69, // gpu price
-            "https://example.com/radeon_hd_7750.jpg",
-        ),
-        GPU(
-            129, // gpu id
-            "Radeon HD 6990", // gpu name
-            "AMD", // gpu brand
-            830, // gpu clock speed
-            "GDDR5", // gpu ram memory
-            "DDR5", // gpu ram type
-            "256bit", // gpu memory bus
-            "4GB", // gpu memory size
-            375, // gpu TDP
-            650, // recommended TDP for power supply
-            449, // gpu price
-            "https://example.com/radeon_hd_6990.jpg",
-        ),
-
-        GPU(
-            130, // gpu id
-            "Radeon HD 6970", // gpu name
-            "AMD", // gpu brand
-            880, // gpu clock speed
-            "GDDR5", // gpu ram memory
-            "DDR5", // gpu ram type
-            "256bit", // gpu memory bus
-            "2GB", // gpu memory size
-            250, // gpu TDP
-            550, // recommended TDP for power supply
-            299, // gpu price
-            "https://example.com/radeon_hd_6970.jpg",
-        ),
-
-        GPU(
-            131, // gpu id
-            "Radeon HD 6950", // gpu name
-            "AMD", // gpu brand
-            800, // gpu clock speed
-            "GDDR5", // gpu ram memory
-            "DDR5", // gpu ram type
-            "256bit", // gpu memory bus
-            "2GB", // gpu memory size
-            200, // gpu TDP
-            500, // recommended TDP for power supply
-            229, // gpu price
-            "https://example.com/radeon_hd_6950.jpg",
-        ),
-
-        GPU(
-            132, // gpu id
-            "Radeon HD 6930", // gpu name
-            "AMD", // gpu brand
-            750, // gpu clock speed
-            "GDDR5", // gpu ram memory
-            "DDR5", // gpu ram type
-            "256bit", // gpu memory bus
-            "1GB", // gpu memory size
-            180, // gpu TDP
-            450, // recommended TDP for power supply
-            179, // gpu price
-            "https://example.com/radeon_hd_6930.jpg",
-        )
     )
     val coolerList = listOf(
         Cooler(

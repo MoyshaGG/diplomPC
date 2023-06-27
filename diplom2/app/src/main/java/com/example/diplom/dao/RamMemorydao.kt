@@ -12,6 +12,9 @@ interface RamMemorydao {
     @Query("SELECT * FROM ram WHERE id = :id")
     suspend fun getRamMemoryLiveDataById(id: Int): List<RamMemory>
 
+    @Query("SELECT * FROM ram LIMIT :limit")
+    suspend fun getLimitedRam(limit: Int): List<RamMemory>
+
     @Query("SELECT * FROM ram WHERE ram_frequency = :frequencyRam")
     suspend fun getAllRamFrequency(frequencyRam: String): List<RamMemory>
 
